@@ -5,7 +5,7 @@
 
 export const environment = {
     chore: false,
-    SERVER_URL: `./`,
+    SERVER_URL: `http://localhost:8080`,
     production: false,
     hmr: false,
     useHash: true

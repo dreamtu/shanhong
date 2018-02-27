@@ -21,17 +21,17 @@
             "text": "雨水情监测",
             "translate": "雨水情监测",
             "link": "/rainMonitor",
-            "icon": "icon-speedometer"
+            "icon": "icon-chemistry"
         }, {
             "text": "水资源监测",
             "translate": "水资源监测",
             "link": "/waterMonitor",
-            "icon": "icon-speedometer"
+            "icon": "icon-drop"
         },{
             "text": "气象信息",
             "translate": "气象信息",
             "link": "/weatherInfo",
-            "icon": "icon-speedometer"
+            "icon": "icon-cloud"
         } ]
     }]
 }

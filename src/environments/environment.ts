@@ -5,7 +5,7 @@
 
 export const environment = {
     chore: false,
-    SERVER_URL: `http://localhost:8080`,
+    SERVER_URL: `http://122.114.60.149:8080/longshan/longshanjiekou`,
     production: false,
     hmr: false,
     useHash: true

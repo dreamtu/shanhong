@@ -7,7 +7,6 @@ import { HeaderComponent } from './default/header/header.component';
 import { SidebarComponent } from './default/sidebar/sidebar.component';
 import { HeaderThemeComponent } from './default/header/components/theme.component';
 import { HeaderFullScreenComponent } from './default/header/components/fullscreen.component';
-import { HeaderUserComponent } from './default/header/components/user.component';
 
 const COMPONENTS = [
     LayoutDefaultComponent,
@@ -18,8 +17,7 @@ const COMPONENTS = [
 
 const HEADERCOMPONENTS = [
     HeaderFullScreenComponent,
-    HeaderThemeComponent,
-    HeaderUserComponent
+    HeaderThemeComponent
 ];
 
 // passport

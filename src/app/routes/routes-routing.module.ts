@@ -5,11 +5,6 @@ import { environment } from '@env/environment';
 import { LayoutDefaultComponent } from '../layout/default/default.component';
 import { LayoutFullScreenComponent } from '../layout/fullscreen/fullscreen.component';
 import { LayoutPassportComponent } from '../layout/passport/passport.component';
-// dashboard pages
-import { DashboardV1Component } from './dashboard/v1/v1.component';
-import { DashboardAnalysisComponent } from './dashboard/analysis/analysis.component';
-import { DashboardMonitorComponent } from './dashboard/monitor/monitor.component';
-import { DashboardWorkplaceComponent } from './dashboard/workplace/workplace.component';
 // passport pages
 import { UserLoginComponent } from './passport/login/login.component';
 import { UserRegisterComponent } from './passport/register/register.component';
@@ -19,23 +14,21 @@ import { CallbackComponent } from './callback/callback.component';
 import { Exception403Component } from './exception/403.component';
 import { Exception404Component } from './exception/404.component';
 import { Exception500Component } from './exception/500.component';
+import {HomeComponent} from "./dashboard/home.component";
+import {RainMonitorComponent} from "./rainMonitor/rainMonitor.component";
+import {WaterMonitorComponent} from "./waterMonitor/waterMonitor.component";
+import {WeatherInfoComponent} from "./weatherInfo/weatherInfo.component";
 
 const routes: Routes = [
     {
         path: '',
         component: LayoutDefaultComponent,
         children: [
-            { path: '', redirectTo: 'dashboard/v1', pathMatch: 'full' },
-            { path: 'dashboard', redirectTo: 'dashboard/v1', pathMatch: 'full' },
-            { path: 'dashboard/v1', component: DashboardV1Component, data: { translate: 'dashboard_v1' } },
-            { path: 'dashboard/analysis', component: DashboardAnalysisComponent, data: { translate: 'dashboard_analysis' } },
-            { path: 'dashboard/monitor', component: DashboardMonitorComponent, data: { translate: 'dashboard_monitor' } },
-            { path: 'dashboard/workplace', component: DashboardWorkplaceComponent, data: { translate: 'dashboard_workplace' } },
-            { path: 'elements', loadChildren: './elements/elements.module#ElementsModule' },
-            { path: 'forms', loadChildren: './forms/forms.module#FormsModule' },
-            { path: 'news', loadChildren: './news/news.module#NewsModule' },
-            { path: 'charts', loadChildren: './charts/charts.module#ChartsModule' },
-            { path: 'tables', loadChildren: './tables/tables.module#TablesModule' }
+            { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+            { path: 'dashboard', component: HomeComponent, data: { translate: 'dashboard' } },
+            { path: 'rainMonitor', component: RainMonitorComponent, data: { translate: 'rainMonitor' } },
+            { path: 'waterMonitor', component: WaterMonitorComponent, data: { translate: 'waterMonitor' } },
+            { path: 'weatherInfo', component: WeatherInfoComponent, data: { translate: 'weatherInfo' } }
         ]
     },
     // 全屏布局

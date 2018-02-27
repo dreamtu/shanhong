@@ -1,17 +1,9 @@
-<div class="logo">
-    <a [routerLink]="['/']">
-        <img class="expanded" src="./assets/img/logo-full.svg" alt="{{settings.app.name}}" style="max-height:40px;" />
-        <img class="collapsed" src="./assets/img/logo.svg" alt="{{settings.app.name}}" style="max-height:30px;" />
-    </a>
-</div>
 <div class="top-nav-wrap">
-    <ul class="top-nav">
+    <ul class="top-nav" style="text-align: center;display: block;margin: auto;">
         <!-- Menu -->
-        <li>
-            <div class="item" (click)="toggleCollapsedSideabar()">
-                <i class="anticon anticon-menu-{{settings.layout.collapsed ? 'unfold' : 'fold'}}"></i>
-            </div>
-        </li>
+        <li><h3 class="expanded" style="max-height:40px;color: #fff;">山洪灾害防汛预警平台</h3></li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+        <li><h3 class="collapsed" style="max-height:30px;color: #fff;">龙山指挥中心</h3></li>
     </ul>
     <ul class="top-nav">
         <!-- Settings -->
@@ -29,9 +21,6 @@
                     </div>
                 </div>
             </nz-dropdown>
-        </li>
-        <li class="hidden-xs">
-            <header-user></header-user>
         </li>
     </ul>
 </div>
